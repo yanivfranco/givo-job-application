@@ -1,8 +1,168 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+body{
+  background-color: #E5E0DF;
 }
 
-a {
-  color: #00B7FF;
+.banner {
+  width: 100%;
+  background-color: orange;
+  height: 200px;
+}
+.pic {
+    max-width:30%;
+    max-height:200;
+    float:left;
+  }
+
+.pic img{
+    max-height:200;
+}
+
+.header p{
+  font-size:300%;
+  margin: 65px;
+}
+
+.header {
+  width: 80%;
+  padding: auto;
+  text-align: center;
+  font-family: Century Gothic;
+  background-color: orange;
+  height: 200px;
+  float:right;
+}
+
+.buttons_container{
+  margin: 20px;
+  text-align: center;
+  font-family: Century Gothic;
+}
+
+/* General button style (reset) */
+.btn {
+  border: solid;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  padding: 25px 80px;
+  display: inline-block;
+  margin: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn {
+  overflow: hidden;
+}
+
+.btn:after {
+  width: 101%;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  background: orange;
+  opacity: 0;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.btn:hover,
+.btn:active {
+  color: black;
+}
+
+.btn:hover:after {
+  height: 75%;
+  opacity: 1;
+}
+
+.btn:active:after {
+  height: 130%;
+  opacity: 1;
+}
+
+
+.tree_container{
+  margin: 50px;
+  margin-left: 400px;
+  font-family: Century Gothic;
+}
+
+.info_container{
+  text-align: center;
+  font-family: Century Gothic;
+
+}
+
+.info_container h{
+  font-size: 200%;
+
+}
+
+
+/* Syntax highlighting for JSON objects */
+ul.json-dict, ol.json-array {
+  list-style-type: none;
+  margin: 0 0 0 1px;
+  border-left: 1px dotted #ccc;
+  padding-left: 2em;
+}
+.json-string {
+  color: #0B7500;
+}
+.json-literal {
+  color: #1A01CC;
+  font-weight: bold;
+}
+
+/* Toggle button */
+a.json-toggle {
+  position: relative;
+  color: black;
+  text-decoration: none;
+}
+a.json-toggle:focus {
+  outline: none;
+}
+a.json-toggle:before {
+  color: orange;
+  content: "\25BC"; /* down arrow */
+  position: absolute;
+  display: inline-block;
+  width: 1em;
+  left: -1em;
+}
+a.json-toggle.collapsed:before {
+  transform: rotate(-90deg); /* Use rotated down arrow, prevents right arrow appearing smaller than down arrow in some browsers */
+  -ms-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+}
+
+/* Collapsable placeholder links */
+a.json-placeholder {
+  color: black;
+  padding: 0 1em;
+  text-decoration: none;
+}
+a.json-placeholder:hover {
+  text-decoration: underline;
 }
