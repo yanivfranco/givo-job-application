@@ -103,7 +103,12 @@ body{
 
 .tree_container{
   margin: 50px;
-  margin-left: 400px;
+  margin-left: 35%;
+  font-family: Century Gothic;
+}
+
+.tree_container2{
+  margin: 20px;
   font-family: Century Gothic;
 }
 

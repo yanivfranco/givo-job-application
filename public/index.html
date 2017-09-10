@@ -4,7 +4,10 @@
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>  
 <link href="stylesheets/style.css" rel="stylesheet">
 <script src="javascripts/jquery.json-viewer.js"></script>
+<link rel="stylesheet" href="javascripts/treant-js/Treant.css" type="text/css"/>
 <script src = "javascripts/script.js"></script>	
+<script src="javascripts/treant-js/vendor/raphael.js"></script>
+<script src="javascripts/treant-js/Treant.js"></script>
 </head>
 <body>
     <div class ="banner">
@@ -13,10 +16,15 @@
     </div>
     <div class="buttons_container">
     	<button class="btn json-btn">Show JSON Tree</button>
+    	<button class="btn viewer-btn">Show JSON Viewer</button>
     	<button class="btn info-btn">Show Personal Info</button>
+
     </div>
     <div class="tree_container">
 	   <div class="tree"></div>
+	</div>
+	<div class="tree_container2">
+		   <div id="tree-simple"> </div>
 	</div>
 	<div class="info_container">
 	   <h>Yaniv Franco</h>
